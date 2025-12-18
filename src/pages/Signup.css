@@ -1,0 +1,137 @@
+/* FULL BACKGROUND */
+.signup-bg {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
+}
+
+/* CARD */
+.signup-card {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 35px;
+  backdrop-filter: blur(15px);
+  animation: fadeIn 0.5s ease;
+  color: white;
+  text-align: center;
+}
+
+.signup-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.signup-subtitle {
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+/* ROLE BUTTONS */
+.signup-roles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.signup-role-btn {
+  width: 32%;
+  padding: 10px 0;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.signup-role-btn:hover {
+  background: white;
+  color: black;
+}
+
+.active-role {
+  
+  color: white;
+}
+
+/* INPUTS */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-input {
+  padding: 14px;
+  background: #1c1c1c;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  color: white;
+  transition: 0.3s;
+}
+
+.signup-input:focus {
+  background: white;
+  color: black;
+  border-color: #c89e48;
+  box-shadow: 0 0 10px rgba(200, 158, 72, 0.6);
+  outline: none;
+}
+
+/* BUTTON */
+.signup-btn {
+  padding: 14px;
+  background: linear-gradient(to right, #c89e48, #8d6e63);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.signup-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+/* LOGIN TEXT */
+.signup-login-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-login-link {
+  color: #d4a23a;
+  text-decoration: underline;
+}
+
+/* SOCIAL ICONS */
+.signup-social {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.signup-social-btn {
+  background: white;
+  border: none;
+  padding: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+}

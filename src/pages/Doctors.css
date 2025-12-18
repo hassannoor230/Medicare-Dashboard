@@ -1,0 +1,236 @@
+
+  .doctor-container {
+    padding: 30px;
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    animation: fadeIn 0.5s ease;
+    margin-top: 5em;
+  }
+
+  /* Header Section */
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+
+  .header-section h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .add-btn {
+    background: linear-gradient(90deg, #4f46e5, #6366f1);;
+    color: #fff;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+  }
+
+  .add-btn:hover {
+    background: #4338ca;
+  }
+
+
+  .doctors-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+  }
+
+
+  .doctor-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    animation: slideUp 0.4s ease;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+  }
+
+  .doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.12);
+  }
+
+  .doctor-img {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border: 3px solid #e5e7eb;
+  }
+
+  /* Text Styling */
+  .doctor-card h3 {
+    margin: 8px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+  }
+
+  .doctor-card p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #555;
+  }
+
+
+  .card-actions {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .edit-btn {
+    background: #10b981;
+    color: white;
+  }
+
+  .edit-btn:hover {
+    background: #059669;
+  }
+
+  .delete-btn {
+    background: #ef4444;
+    color: white;
+  }
+
+  .delete-btn:hover {
+    background: #dc2626;
+  }
+
+
+  .popup-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.4s ease;
+    z-index: 9999;
+  }
+
+  .form-box {
+    background: rgba(255,255,255,0.95);
+    padding: 25px;
+    width: 380px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    animation: scaleIn 0.3s ease;
+  }
+
+  .form-box h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+  }
+
+  /* Input Fields */
+  .form-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: 0.2s;
+  }
+
+  .form-box input:focus {
+    border-color: #4f46e5;
+    outline: none;
+    box-shadow: 0 0 8px rgba(79, 70, 229, 0.2);
+  }
+
+  /* Buttons */
+  .form-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .save-btn {
+    background: #4f46e5;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .save-btn:hover {
+    background: #4338ca;
+  }
+
+  .cancel-btn {
+    background: #9ca3af;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .cancel-btn:hover {
+    background: #6b7280;
+  }
+
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes scaleIn {
+    from { transform: scale(0.85); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  .appoint-btn {
+    background: #0ea5e9;
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .appoint-btn:hover {
+    background: #0284c7;
+  }
